@@ -1,0 +1,248 @@
+
+.header{
+    -fx-background-color: linear-gradient(to right, #333333, #505050);
+    -fx-padding: 10px 20px;
+    -fx-spacing: 15;
+}
+
+.logo {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 0);
+}
+
+.tlt {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.helpBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.help-button:hover {
+    -fx-background-color: #1976d2;
+}
+
+.section-card {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 3);
+    -fx-spacing: 15;
+}
+
+.titre {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 1, 1);
+    -fx-padding: 10px;
+}
+
+/* Section Photo */
+.image-container {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+}
+
+.placeholder-text {
+    -fx-fill: #999999;
+    -fx-font-size: 14px;
+}
+
+.progress-indicator {
+    -fx-progress-color: #1976d2;
+}
+
+.txtlabel {
+    -fx-text-fill: #555555;
+    -fx-font-size: 14px;
+}
+
+.action-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+    -fx-background-radius: 4px;
+}
+
+.action-button:hover {
+    -fx-background-color: #1565c0;
+}
+
+.rectitle {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 1, 1);
+    -fx-padding: 10px;
+}
+.reclabel {
+    -fx-text-fill: #666666;
+    -fx-font-size: 14px;
+}
+
+.recommendation{
+    -fx-background-color: transparent;
+}
+
+.recommendations-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-width: 0;
+}
+
+.recommendations-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.recommendations-scroll > .scroll-bar:vertical {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 0;
+}
+
+.recommendations-scroll > .scroll-bar:vertical .thumb {
+    -fx-background-color: #bbbbbb;
+    -fx-background-radius: 2px;
+}
+
+.recommendation-card {
+    -fx-background-color: white;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-transition: all 0.3s;
+}
+
+.recommendation-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 5);
+    -fx-translate-y: -2;
+}
+
+.bestt{
+    -fx-border-color: #1976d2;
+    -fx-border-width: 2px;
+    -fx-background-color: #e3f2fd;
+}
+
+.best{
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 5px;
+    -fx-background-radius: 3px;
+    -fx-alignment: center;
+    -fx-max-width: 100px;
+}
+
+.glasses-image {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.glasses-name {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+
+
+.try-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.try-button:hover {
+    -fx-background-color: #1565c0;
+}
+
+
+.footer {
+    -fx-background-color: linear-gradient(to right, #333333, #505050);
+    -fx-padding: 10px 20px;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.back-button {
+    -fx-background-color: #757575;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 4px;
+}
+
+.back-button:hover {
+    -fx-background-color: #616161;
+}
+
+.copyright-label {
+    -fx-text-fill: #777777;
+    -fx-font-size: 12px;
+}
+
+
+.webcam-dialog {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 15px;
+}
+
+.webcam-container {
+    -fx-background-color: #000000;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+.webcam-view {
+    -fx-border-color: #333333;
+    -fx-border-width: 1px;
+}
+
+.face{
+    -fx-stroke: rgba(255, 255, 255, 0.5);
+    -fx-stroke-width: 2;
+    -fx-stroke-dash-array: 10 5;
+    -fx-fill: transparent;
+}
+
+.capture-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 25px;
+    -fx-background-radius: 4px;
+}
+
+.capture-button:hover {
+    -fx-background-color: #43A047;
+}
+
+.cancel-button {
+    -fx-background-color: #F44336;
+    -fx-text-fill: white;
+    -fx-padding: 10px 25px;
+    -fx-background-radius: 4px;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #E53935;
+}
+
+.hover-effect:hover {
+    -fx-opacity: 0.9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}

@@ -1,0 +1,16 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Python
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo

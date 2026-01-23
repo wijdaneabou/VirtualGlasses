@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  serveur:
+    build: ./serveur
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+    environment:
+      - DATABASE_URL=mysql://user@mysql:3306/glasses_db
+    networks:
+      - app-network
+
+  java-app:
+    build: ./java-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+      - serveur
+    environment:
+      - SERVER_URL=http://serveur:5000
+      - DATABASE_URL=mysql://user@mysql:3306/glasses_db
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=glasses_db
+      - MYSQL_USER=user
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql-data:
